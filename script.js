@@ -5,7 +5,7 @@ let date = document.querySelector(".date");
 
 setInterval(()=>{
     let currentTime = new Date();
-    let todayDate = currentTime.getDate() + "-" + currentTime.getMonth() + "-" + currentTime.getFullYear();
+    let todayDate = currentTime.getDate() + "-" + (currentTime.getMonth()+1) +"-" + currentTime.getFullYear();
     console.log ()
     date.innerHTML = todayDate;
      hrs.innerHTML = (currentTime.getHours()<10?"0":"") + currentTime.getHours();
